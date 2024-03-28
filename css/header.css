@@ -1,0 +1,38 @@
+header{
+  background-color: #EBEBE9;
+}
+
+.logo-hed{
+  margin-top: 11px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.menu {
+  flex: 1;
+  text-align: right;
+}
+
+.menu ul li {
+  display: inline-flex;
+  padding: 11px 32px;
+  position: relative;
+}
+
+.menu ul li a {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu a{
+  text-decoration: none;
+  color: black;
+}
