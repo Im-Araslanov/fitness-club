@@ -1,0 +1,40 @@
+header{
+  background-color: #EBEBE9;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .logo-hed{
+      margin-top: 11px;
+    }
+  }
+  .menu {
+    flex: 1;
+    text-align: right;
+
+    &-list {
+      display: inline-flex;
+      position: relative;
+
+      &__item{
+        padding: 11px 32px;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        &-link{
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      
+    }
+  }
+
+}
