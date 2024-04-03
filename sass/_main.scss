@@ -18,12 +18,12 @@
   }
 
   &__titl {
-    font-weight: 600;
+    font-weight: 900;
     letter-spacing: 15px;
-    font-family: sans-serif;
+    font-family: 'Arial Bold';
     position: relative;
     color: #CFCFCD;
-    font-size: 163px;
+    font-size: 160px;
     left: 276px;
     top: 237px;
     z-index: 0;
@@ -32,24 +32,31 @@
   &__discription{
     right: -50px;
     top: 470px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
-    font-weight: 540;
+    font-weight: 500;
     width: 587px;
     position: absolute;
     font-size: 20px;
     z-index: 2;
 
     &-link{
-      font-family: sans-serif;
-      // font-weight: 400;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
       text-decoration: none;
       color: black;
       display: inline-flex;
       padding: 11px 32px;
       position: relative;
       font-size: 20px;
+      cursor: pointer;
+      transition: 1s;
       z-index: 2;
+      &:hover{
+        border-radius: 30px;
+        background-color: white;
+        border: 1px solid white;
+      }
   }
   }
 }

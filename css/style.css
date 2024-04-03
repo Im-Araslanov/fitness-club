@@ -76,9 +76,16 @@ header .menu-list {
 header .menu-list__item {
   padding: 11px 32px;
   font-size: 20px;
-  font-family: sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 1s;
+}
+header .menu-list__item:hover {
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid white;
 }
 header .menu-list__item-link {
   text-decoration: none;
@@ -102,12 +109,12 @@ header .menu-list__item-link {
   z-index: 1;
 }
 .main__preview__titl {
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 15px;
-  font-family: sans-serif;
+  font-family: "Arial Bold";
   position: relative;
   color: #CFCFCD;
-  font-size: 163px;
+  font-size: 160px;
   left: 276px;
   top: 237px;
   z-index: 0;
@@ -115,21 +122,37 @@ header .menu-list__item-link {
 .main__preview__discription {
   right: -50px;
   top: 470px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
-  font-weight: 540;
+  font-weight: 500;
   width: 587px;
   position: absolute;
   font-size: 20px;
   z-index: 2;
 }
 .main__preview__discription-link {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   text-decoration: none;
   color: black;
   display: inline-flex;
   padding: 11px 32px;
   position: relative;
   font-size: 20px;
+  cursor: pointer;
+  transition: 1s;
   z-index: 2;
+}
+.main__preview__discription-link:hover {
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+@font-face {
+  font-family: "Arial Bold";
+  src: url("../fonts/Arial-BoldMT.eot");
+  src: url("./fonts/Arial-BoldMT.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-BoldMT.woff") format("woff"), url("../fonts/Arial-BoldMT.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */
