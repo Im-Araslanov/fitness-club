@@ -5,16 +5,22 @@
     display: flex;
     position: relative;
     height: 70vh;
-    // justify-content: space-between;
-    // align-items: center;
     max-width: 1400px;
     margin: 0 auto;
+    @media screen and (max-width: 952px){
+      max-width: 90%;
+    }
 
   &__img{
     position: absolute;
-    left: -189px;
+    left: -14%;
     bottom: 0;
     z-index: 1;
+    @media screen and (max-width: 952px){
+      left: -13%;
+      width: 73%;
+  }
+    
   }
 
   &__titl {
@@ -27,6 +33,12 @@
     left: 276px;
     top: 237px;
     z-index: 0;
+    @media screen and (max-width: 952px){
+      font-size: 100px;
+      left: 6%;
+      top: 28%;
+    }
+    
   }
 
   &__discription{
@@ -39,6 +51,13 @@
     position: absolute;
     font-size: 20px;
     z-index: 2;
+    @media screen and (max-width: 952px){
+      width: 363px;
+      height: 377px;
+      top: 30%;
+      left: 62%;
+      right: 10%;
+    }
 
     &-link{
       font-family: "Roboto", sans-serif;
@@ -56,8 +75,81 @@
         border-radius: 30px;
         background-color: white;
         border: 1px solid white;
+        @media screen and (max-width: 952px){
+      
+        }
       }
-  }
+    }
   }
 }
-  }
+
+// &__about-parent{
+//   background-color: white;
+
+// &__conteiner{
+//   display: flex;
+//   position: relative;
+//   height: 70vh;
+//   max-width: 1400px;
+//   margin: 0 auto;
+  
+//   &__img{
+//     position: absolute;
+//     left: 42%;
+//     bottom: 0;
+//     z-index: 1;
+//   }
+//   &__titl{
+//     font-weight: 900;
+//     font-size: 80px;
+//     font-family: "Arial Bold";
+//     color: black;
+//     position: relative;
+//     left: 10%;
+//     width: 1324px;
+//     height: 180px;
+//     top: 169px;
+//     z-index: 3;
+//     }
+
+
+//   &__discription {
+//     width: 562px;
+//     font-size: 20px;
+//     height: 670px;
+//     border: 6px solid #FF8340;
+//     display: flex;
+//     justify-content: center;
+//     align-items: end;
+//     padding: 335px 25px 105px 25px;
+//     position: absolute;
+//     left: 14%;
+//     top: 4%;
+//     z-index: 2;
+
+//     &-link{
+//       top: 84%;
+//       right: 60%;
+//       font-family: "Roboto", sans-serif;
+//       font-weight: 500;
+//       text-decoration: none;
+//       color: black;
+//       display: inline-flex;
+//       padding: 14px 30px;
+//       position: absolute;
+//       font-size: 20px;
+//       cursor: pointer;
+//       transition: 1s;
+//       z-index: 2;
+//       &:hover{
+//         border-radius: 30px;
+//         background-color: #FF8340;
+//         border: 1px solid #FF8340;
+//     }
+//   }
+  
+//     }
+//   }
+// }
+
+}
