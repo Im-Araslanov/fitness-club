@@ -1,0 +1,32 @@
+.direction {
+  background-color: #292929;
+
+  &__wrapper {
+    position: relative;
+    height: 35vh;
+
+    &__titl {
+      color: white;
+      font-size: clamp(16px, 6vw ,80px);
+      font-family: "Arial Bold";
+      padding: 124px 0 0 0;
+
+      @media screen and (max-width: 952px){
+        padding: 53px 30px 0 30px;
+      }
+    }
+
+    &__discription {
+      line-height: 24px;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      padding: 34px 0px 81px 0px;
+
+      @media screen and (max-width: 952px){
+        width: 888px;
+        padding: 28px 30px 53px 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.about{
+  background-color: white;
+
+  &__wrapper {
+  position: relative;
+  height: 85vh;
+
+  &__img {
+    position: absolute;
+    padding: 28px 0 0 0;
+    width: clamp(598px, 65%, 953px);
+    left: 39%;
+    bottom: 0;
+    z-index: 1;
+
+    @media screen and (max-width: 1920px){
+
+    }
+    @media screen and (max-width: 1600px){
+      width: 60%;
+
+    }
+    @media screen and (max-width: 1260px){
+
+    }
+    @media screen and (max-width: 952px){
+
+    }
+  }
+
+  &__titl {
+    font-weight: 900;
+    font-size: clamp(16px, 6vw ,80px);
+    font-family: "Arial Bold";
+    color: black;
+    position: relative;
+    width: max-content;
+    padding: 169px 0 58px 0;
+    top: 1vh;
+    left: 1vw;
+    z-index: 3;
+    @media screen and (max-width: 1920px){
+
+    }
+    @media screen and (max-width: 1600px){
+    
+    }
+    @media screen and (max-width: 1260px){
+
+    }
+    @media screen and (max-width: 952px){
+      width: 562px;
+      padding: 54px 32px;
+  }
+  }
+
+  &__discription {
+    line-height: 24px;
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    border: 6px solid #FF8340;
+    left: 10vw;
+    top: 5vh;
+    width: 510px;
+    padding: 335px 25px 105px 25px;
+    z-index: 2;
+
+    @media screen and (max-width: 1920px){
+
+    }
+    @media screen and (max-width: 1260px){
+
+    }
+    @media screen and (max-width: 952px){
+      width: 439px;
+      padding: 270px 30px 4px 30px;
+      top: 1vh;
+      left: 11vw;
+    }
+
+    &-link {
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+      color: black;
+      display: block;
+      padding: 14px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.5s;
+      z-index: 2;
+
+      @media screen and (max-width: 1920px){
+
+      }
+      @media screen and (max-width: 1260px){
+
+      }
+      @media screen and (max-width: 952px){
+
+      }
+    
+      &:hover{
+        color: #FF8340;
+      }
+    }
+  }
+  
+  }
+}
