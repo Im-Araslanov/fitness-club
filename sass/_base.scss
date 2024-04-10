@@ -1,4 +1,12 @@
-.container{
+.container {
   max-width: 1400px;
   margin: 0 auto;
+
+  @media screen and (max-width: 952px){
+    max-width: 888px;
+  }
+}
+
+textarea {
+  resize: none;
 }
