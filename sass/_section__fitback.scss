@@ -1,0 +1,130 @@
+.fitback {
+  background-color: #FF8340;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__titl {
+    text-align: center;
+    color: #292929;
+    font-size: clamp(32px, 6vw, 45px);
+    font-family: "Arial Bold";
+    padding: 40px 0 35px 0;
+  }
+
+  &__line {
+    background: #292929;
+    width: 64px;
+    height: 6px;
+    margin: 0 auto;
+  }
+
+  &__discription {
+    line-height: 24px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    padding: 50px 0 40px 0;
+    letter-spacing: 0.1em;
+
+    @media screen and (max-width: 1399px){
+      padding: 30px;
+    }
+  }
+
+  &__form {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__client-info { 
+      width: 48%;
+      height: 58px;
+      padding: 18px 34px;
+      line-height: 24px;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      font-family: "Roboto", sans-serif;
+
+      @media screen and (max-width: 1399px){
+        width: 48%;
+        padding: 30px;
+      }
+    }
+
+    &__label {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      width: 48%;
+      gap: 20px;
+    }
+
+    &__question &__label {
+      padding: 10px 30px 10 30px;
+      text-align: center;
+      width: 100%;
+      height: 58px;
+      border: 2px solid #FFFFFF;
+      color: white;
+      font-size: 16px;
+      appearance: none;
+      background-color: #292929;
+    }
+
+    &__label::after {
+      content: '\2335';
+      font-size: 1.5em;
+      color: white;
+      position: absolute;
+      top: 30%;
+      right: 10px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    &__question {
+      appearance: none;
+      color: white;
+      width: 100%;
+      height: 58px;
+      padding: 0 34px;
+      line-height: 24px;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      font-family: "Roboto", sans-serif;
+      background-color: #292929;
+      }
+
+      &__mess {
+        width: 100%;
+        height: 198px;
+        margin-bottom: 253px;
+        }
+      
+
+      &__link {
+        color: #292929;
+        position: absolute;
+        right: 0;
+        top: 33vh;
+        width: 214px;
+        height: 213px;
+        line-height: 24px;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        padding: 54px 0 176px 0;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.5s;
+
+          &:hover {
+            color: white;
+          }
+      }
+    }
+  }

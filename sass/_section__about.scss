@@ -13,18 +13,8 @@
     bottom: 0;
     z-index: 1;
 
-    @media screen and (max-width: 1920px){
-
-    }
     @media screen and (max-width: 1600px){
       width: 60%;
-
-    }
-    @media screen and (max-width: 1260px){
-
-    }
-    @media screen and (max-width: 952px){
-
     }
   }
 
@@ -60,6 +50,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     border: 6px solid #FF8340;
+    letter-spacing: 0.1em;
     left: 10vw;
     top: 5vh;
     width: 510px;

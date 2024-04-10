@@ -1,7 +1,7 @@
 .main {
   background-color: #EBEBE9;
 
-  &__wrapper {
+    &__wrapper{
     position: relative;
     height: 70vh;
   }
@@ -38,18 +38,11 @@
     color: #CFCFCD;
     width: max-content;
     z-index: 0;
-    @media screen and (max-width: 1920px){
 
-    }
     @media screen and (max-width: 1600px){
       left: 13vw;
     }
-    @media screen and (max-width: 1260px){
 
-    } 
-    @media screen and (max-width: 952px){
-    
-      }
   }
 
   &__discription {
@@ -92,4 +85,4 @@
         }
       }
   }
-}
+  }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,6 +53,27 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 952px) {
+  .container {
+    max-width: 888px;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+@font-face {
+  font-family: "Arial Bold";
+  src: url("../fonts/Arial-BoldMT.eot");
+  src: url("./fonts/Arial-BoldMT.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-BoldMT.woff") format("woff"), url("../fonts/Arial-BoldMT.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
 header {
   padding: 30px 0 10px 0;
   background-color: #EBEBE9;
@@ -183,13 +205,6 @@ header .menu-list__item-link {
   color: #FF8340;
 }
 
-@font-face {
-  font-family: "Arial Bold";
-  src: url("../fonts/Arial-BoldMT.eot");
-  src: url("./fonts/Arial-BoldMT.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-BoldMT.woff") format("woff"), url("../fonts/Arial-BoldMT.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
 .about {
   background-color: white;
 }
@@ -235,6 +250,7 @@ header .menu-list__item-link {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   border: 6px solid #FF8340;
+  letter-spacing: 0.1em;
   left: 10vw;
   top: 5vh;
   width: 510px;
@@ -277,6 +293,11 @@ header .menu-list__item-link {
   font-family: "Arial Bold";
   padding: 124px 0 0 0;
 }
+@media screen and (max-width: 1399px) {
+  .direction__wrapper__titl {
+    padding: 30px;
+  }
+}
 @media screen and (max-width: 952px) {
   .direction__wrapper__titl {
     padding: 53px 30px 0 30px;
@@ -285,9 +306,15 @@ header .menu-list__item-link {
 .direction__wrapper__discription {
   line-height: 24px;
   font-size: 20px;
+  letter-spacing: 0.1em;
   font-family: "Roboto", sans-serif;
   color: white;
   padding: 34px 0px 81px 0px;
+}
+@media screen and (max-width: 1399px) {
+  .direction__wrapper__discription {
+    padding: 30px;
+  }
 }
 @media screen and (max-width: 952px) {
   .direction__wrapper__discription {
@@ -296,7 +323,125 @@ header .menu-list__item-link {
   }
 }
 
-.container {
-  max-width: 1400px;
+.fitback {
+  background-color: #FF8340;
+}
+.fitback__wrapper {
+  position: relative;
+}
+.fitback__titl {
+  text-align: center;
+  color: #292929;
+  font-size: clamp(32px, 6vw, 45px);
+  font-family: "Arial Bold";
+  padding: 40px 0 35px 0;
+}
+.fitback__line {
+  background: #292929;
+  width: 64px;
+  height: 6px;
   margin: 0 auto;
+}
+.fitback__discription {
+  line-height: 24px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  padding: 50px 0 40px 0;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 1399px) {
+  .fitback__discription {
+    padding: 30px;
+  }
+}
+.fitback__form {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.fitback__form__client-info {
+  width: 48%;
+  height: 58px;
+  padding: 18px 34px;
+  line-height: 24px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 1399px) {
+  .fitback__form__client-info {
+    width: 48%;
+    padding: 30px;
+  }
+}
+.fitback__form__label {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 48%;
+  gap: 20px;
+}
+.fitback__form__question .fitback__form__label {
+  padding: 10px 30px 10 30px;
+  text-align: center;
+  width: 100%;
+  height: 58px;
+  border: 2px solid #FFFFFF;
+  color: white;
+  font-size: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #292929;
+}
+.fitback__form__label::after {
+  content: "⌵";
+  font-size: 1.5em;
+  color: white;
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.fitback__form__question {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: white;
+  width: 100%;
+  height: 58px;
+  padding: 0 34px;
+  line-height: 24px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: "Roboto", sans-serif;
+  background-color: #292929;
+}
+.fitback__form__mess {
+  width: 100%;
+  height: 198px;
+  margin-bottom: 253px;
+}
+.fitback__form__link {
+  color: #292929;
+  position: absolute;
+  right: 0;
+  top: 33vh;
+  width: 214px;
+  height: 213px;
+  line-height: 24px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 54px 0 176px 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.fitback__form__link:hover {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
