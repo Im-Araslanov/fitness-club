@@ -1,0 +1,133 @@
+.sistem{
+  position: relative;
+
+  &__img-1{
+    display: block;
+    position: absolute;
+    width: 50%;
+    right: 0;
+  }
+
+  &__contentinfo{
+    max-width: 960px;
+    padding: 5.7em 0 0 11.8em;
+
+    @media screen and (max-width: 1100px){
+      max-width: 476px;
+      padding: 1em 0 0 1.6em;
+    }
+
+    &__titl{
+      font-size: clamp(16px, 6vw ,80px);
+      font-family: "Arial Bold";
+      letter-spacing: 0.1em;
+      width: 67%;
+
+      @media screen and (max-width: 1100px) {
+        padding-top: 0.7em;
+        width: 94%;
+        text-align: center;
+      }
+    }
+  
+    &__discription{
+      padding-top: 1.7em;
+      padding-bottom: 2.1em;
+      width: 89%;
+      line-height: 24px;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      font-family: "Roboto", sans-serif;
+
+      @media screen and (max-width: 1100px) {
+        padding-top: 1.9em;
+        padding-bottom: 0.6em;
+        width: 94%;
+      }
+
+      .additional-text {
+        display: none;
+      }
+
+      @media screen and (max-width: 1100px) {
+        .additional-text {
+          display: contents;
+          line-height: 24px;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          font-family: "Roboto", sans-serif;
+        }
+      }
+    }
+  }
+
+  &__cards{
+    display: grid;
+    // grid-template-columns: 320px 320px 320px;
+    grid-template-areas: "card-1 card-2 card-3";
+    max-width: 960px;
+
+    @media screen and (max-width: 1100px){
+      max-width: 955px;
+      // grid-template-columns: repeat(2, 1fr) 952px;
+      grid-template-areas: "card-1 card-2"
+                          "card-3 card-3";
+    }
+
+    .item{
+      background-color: #FBFBFB;
+      padding-bottom: 1.3em;
+    }
+
+    &__card-1{
+      grid-area: card-1;
+    }
+
+    &__card-2{
+      grid-area: card-2;
+    }
+
+    &__card-3{
+      grid-area: card-3;
+
+      @media screen and (max-width: 1100px) {
+        max-width: 952px;
+      }
+    }
+
+    .sistem__cards__img {
+      padding: 38px 112px 70px 112px;
+    }
+    
+    @media screen and (max-width: 1100px) {
+      .sistem__cards__img {
+        padding: 38px 118px 70px 192px;
+      }
+    
+      .img__card-3 {
+        padding: 38px 112px 70px 112px;
+      }
+    }
+    
+    @media screen and (max-width: 1100px) {
+      .img__card-3 {
+        padding: 38px 439px 70px 439px;
+      }
+    }
+
+    &__titl{
+      text-align: center;
+      font-size: clamp(20px, 6vw, 20px);
+      font-family: "Arial Bold";
+    }
+
+    &__subtitle{
+      padding: 52px 34px 58px 34px;
+      text-align: center;
+      line-height: 24px;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 0.1em;
+    }
+  }
+}

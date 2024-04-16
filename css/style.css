@@ -444,4 +444,185 @@ header .menu-list__item-link {
 }
 .fitback__form__link:hover {
   color: white;
+}
+
+.sistem {
+  position: relative;
+}
+.sistem__img-1 {
+  display: block;
+  position: absolute;
+  width: 50%;
+  right: 0;
+}
+.sistem__contentinfo {
+  max-width: 960px;
+  padding: 5.7em 0 0 11.8em;
+}
+@media screen and (max-width: 1100px) {
+  .sistem__contentinfo {
+    max-width: 476px;
+    padding: 1em 0 0 1.6em;
+  }
+}
+.sistem__contentinfo__titl {
+  font-size: clamp(16px, 6vw, 80px);
+  font-family: "Arial Bold";
+  letter-spacing: 0.1em;
+  width: 67%;
+}
+@media screen and (max-width: 1100px) {
+  .sistem__contentinfo__titl {
+    padding-top: 0.7em;
+    width: 94%;
+    text-align: center;
+  }
+}
+.sistem__contentinfo__discription {
+  padding-top: 1.7em;
+  padding-bottom: 2.1em;
+  width: 89%;
+  line-height: 24px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 1100px) {
+  .sistem__contentinfo__discription {
+    padding-top: 1.9em;
+    padding-bottom: 0.6em;
+    width: 94%;
+  }
+}
+.sistem__contentinfo__discription .additional-text {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .sistem__contentinfo__discription .additional-text {
+    display: contents;
+    line-height: 24px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-family: "Roboto", sans-serif;
+  }
+}
+.sistem__cards {
+  display: grid;
+  grid-template-areas: "card-1 card-2 card-3";
+  max-width: 960px;
+}
+@media screen and (max-width: 1100px) {
+  .sistem__cards {
+    max-width: 955px;
+    grid-template-areas: "card-1 card-2" "card-3 card-3";
+  }
+}
+.sistem__cards .item {
+  background-color: #FBFBFB;
+  padding-bottom: 1.3em;
+}
+.sistem__cards__card-1 {
+  grid-area: card-1;
+}
+.sistem__cards__card-2 {
+  grid-area: card-2;
+}
+.sistem__cards__card-3 {
+  grid-area: card-3;
+}
+@media screen and (max-width: 1100px) {
+  .sistem__cards__card-3 {
+    max-width: 952px;
+  }
+}
+.sistem__cards .sistem__cards__img {
+  padding: 38px 112px 70px 112px;
+}
+@media screen and (max-width: 1100px) {
+  .sistem__cards .sistem__cards__img {
+    padding: 38px 118px 70px 192px;
+  }
+  .sistem__cards .img__card-3 {
+    padding: 38px 112px 70px 112px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .sistem__cards .img__card-3 {
+    padding: 38px 439px 70px 439px;
+  }
+}
+.sistem__cards__titl {
+  text-align: center;
+  font-size: clamp(20px, 6vw, 20px);
+  font-family: "Arial Bold";
+}
+.sistem__cards__subtitle {
+  padding: 52px 34px 58px 34px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+footer {
+  padding: 2.1em 12em 1em 12em;
+  background-color: white;
+}
+@media screen and (max-width: 952px) {
+  footer {
+    padding: 2.1em 1.6em 1em 1.3em;
+  }
+}
+footer .footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .menu-list {
+  display: flex;
+}
+footer .menu-list__item {
+  padding: 11px 32px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 1s;
+}
+@media screen and (max-width: 952px) {
+  footer .menu-list__item {
+    padding: 11px 50px;
+  }
+}
+footer .menu-list__item:hover {
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid white;
+}
+footer .menu-list__item-link {
+  text-decoration: none;
+  color: black;
+}
+footer .menu .coach {
+  padding: 11px 0 11px 232px;
+}
+@media screen and (max-width: 952px) {
+  footer .menu .coach {
+    padding: 11px 0 11px 90px;
+  }
+}
+footer .menu .memberships {
+  padding: 11px 232px;
+}
+@media screen and (max-width: 952px) {
+  footer .menu .memberships {
+    padding: 11px 90px;
+  }
+}
+footer .year {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 44px 0 0 0;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
