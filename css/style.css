@@ -450,14 +450,22 @@ header .menu-list__item-link {
   position: relative;
 }
 .sistem__img-1 {
+  max-width: 960px;
   display: block;
   position: absolute;
-  width: 50%;
+  width: 48%;
   right: 0;
 }
 .sistem__contentinfo {
   max-width: 960px;
+  width: 50%;
   padding: 5.7em 0 0 11.8em;
+}
+@media screen and (max-width: 1400px) {
+  .sistem__contentinfo {
+    max-width: 476px;
+    padding: 1em 0 0 5.6em;
+  }
 }
 @media screen and (max-width: 1100px) {
   .sistem__contentinfo {
@@ -487,6 +495,13 @@ header .menu-list__item-link {
   letter-spacing: 0.1em;
   font-family: "Roboto", sans-serif;
 }
+@media screen and (max-width: 1400px) {
+  .sistem__contentinfo__discription {
+    padding-top: 1.9em;
+    padding-bottom: 1.6em;
+    width: 94%;
+  }
+}
 @media screen and (max-width: 1100px) {
   .sistem__contentinfo__discription {
     padding-top: 1.9em;
@@ -511,6 +526,12 @@ header .menu-list__item-link {
   grid-template-areas: "card-1 card-2 card-3";
   max-width: 960px;
 }
+@media screen and (max-width: 1600px) {
+  .sistem__cards {
+    max-width: 955px;
+    grid-template-areas: "card-1 card-2" "card-3 card-3";
+  }
+}
 @media screen and (max-width: 1100px) {
   .sistem__cards {
     max-width: 955px;
@@ -530,6 +551,11 @@ header .menu-list__item-link {
 .sistem__cards__card-3 {
   grid-area: card-3;
 }
+@media screen and (max-width: 1600px) {
+  .sistem__cards__card-3 {
+    max-width: 1000px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .sistem__cards__card-3 {
     max-width: 952px;
@@ -538,12 +564,22 @@ header .menu-list__item-link {
 .sistem__cards .sistem__cards__img {
   padding: 38px 112px 70px 112px;
 }
+@media screen and (max-width: 1600px) {
+  .sistem__cards .sistem__cards__img {
+    padding: 38px 118px 70px 192px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .sistem__cards .sistem__cards__img {
     padding: 38px 118px 70px 192px;
   }
   .sistem__cards .img__card-3 {
     padding: 38px 112px 70px 112px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .sistem__cards .img__card-3 {
+    padding: 38px 439px 70px 439px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -563,6 +599,95 @@ header .menu-list__item-link {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.1em;
+}
+
+.coach__titl {
+  font-size: clamp(16px, 6vw, 80px);
+  font-family: "Arial Bold";
+  letter-spacing: 0.1em;
+  padding: 1.7em 0 1.6em 3.2em;
+}
+@media screen and (max-width: 952px) {
+  .coach__titl {
+    display: none;
+  }
+}
+.coach__item-img {
+  width: 100%;
+}
+.coach__item-titl {
+  padding: 0.4em 2.2em 0.2em 1.2em;
+  font-size: clamp(38px, 4vw, 45px);
+  font-family: "Arial";
+  font-weight: 900;
+  line-height: 50px;
+  color: #292929;
+}
+.coach__item-subtitle {
+  padding: 0 0 0 2.7em;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: clamp(16px, 1vw, 20px);
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #292929;
+}
+.coach .swiper-button-next:after, .coach .swiper-rtl .swiper-button-prev:after {
+  color: #FF8340;
+  margin-left: 34px;
+}
+.coach .swiper-button-prev:after, .coach .swiper-rtl .swiper-button-next:after {
+  color: #FF8340;
+  margin-right: 34px;
+}
+.coach .swiper-button-next, .coach .swiper-rtl .swiper-button-prev {
+  background: linear-gradient(-90deg, #FFFFFF 0%, rgba(41, 41, 41, 0) 100%);
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5%;
+}
+@media screen and (max-width: 952px) {
+  .coach .swiper-button-next, .coach .swiper-rtl .swiper-button-prev {
+    display: none;
+  }
+}
+.coach .swiper-button-prev, .coach .swiper-rtl .swiper-button-next {
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(41, 41, 41, 0) 100%);
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5%;
+}
+@media screen and (max-width: 952px) {
+  .coach .swiper-button-prev, .coach .swiper-rtl .swiper-button-next {
+    display: none;
+  }
+}
+@media screen and (max-width: 952px) and (min-width: 768px) {
+  .coach .swiper-slide img {
+    filter: grayscale(1);
+  }
+  .coach .swiper-slide-next img {
+    filter: grayscale(0);
+  }
+}
+
+.map__titl {
+  font-size: clamp(60px, 6vw, 80px);
+  font-family: "Arial Bold";
+  letter-spacing: 0.1em;
+  padding: 1.4em 0 0.5em 3.2em;
+}
+@media screen and (max-width: 952px) {
+  .map__titl {
+    padding: 0.8em 0 0.4em 0.5em;
+  }
+}
+.map__iframe {
+  width: 100%;
 }
 
 footer {

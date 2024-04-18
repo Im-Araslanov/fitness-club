@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -193,6 +198,103 @@
 
   </section>
 
+<section class="coach">
+
+  <div class="coach__titl">
+    <h2>ТРЕНЕРСКИЙ СОСТАВ</h2>
+  </div>
+
+  <div class="swiper coach__list">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide coach__item">
+        <img class="coach__item-img" src="./img/coach-1.jpeg" alt="">
+        <h3 class="coach__item-titl">
+          ДЖЕСС ПАРКЕР
+        </h3>
+        <span class="coach__item-subtitle">
+          Персональный тренер
+        </span>
+      </div>
+
+      <div class="swiper-slide coach__item">
+        <img class="coach__item-img" src="./img/coach-2.jpeg" alt="">
+        <h3 class="coach__item-titl">
+          САРА КОННОР
+        </h3>
+        <span class="coach__item-subtitle">
+          Персональный тренер
+        </span>
+      </div>
+
+      <div class="swiper-slide coach__item">
+        <img class="coach__item-img" src="./img/coach-3.jpeg" alt="">
+        <h3 class="coach__item-titl">
+          ОРЛАНДО БЛУМ
+        </h3>
+        <span class="coach__item-subtitle">
+          Персональный тренер
+        </span>
+      </div>
+
+      <div class="swiper-slide coach__item">
+        <img class="coach__item-img" src="./img/coach-4.jpeg" alt="">
+        <h3 class="coach__item-titl">
+          АЛЕК БОЛДУИН
+        </h3>
+        <span class="coach__item-subtitle">
+          Персональный тренер
+        </span>
+      </div>
+
+      <div class="swiper-slide coach__item">
+        <img class="coach__item-img" src="./img/coach-5.jpeg" alt="">
+        <h3 class="coach__item-titl">
+          ТЕРМИ НАТОР
+        </h3>
+        <span class="coach__item-subtitle">
+          Персональный тренер
+        </span>
+      </div>
+
+      <div class="swiper-slide coach__item">
+        <img class="coach__item-img" src="./img/coach-1.jpeg" alt="">
+        <h3 class="coach__item-titl">
+          ДЖЕСС ПАРКЕР
+        </h3>
+        <span class="coach__item-subtitle">
+          Персональный тренер
+        </span>
+      </div>
+
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+</section>
+
+<!-- <section class="subscription">
+
+как доделаю аттестацию сделаю этот блок по другому не успеваю(((((
+
+  <div class="subscription__titl">
+    <h2>АБОНЕМЕНТ</h2>
+  </div>
+
+</section> -->
+
+<section class="map">
+
+  <div class="map__titl">
+    <h2>ДОБРО ПОЖАЛОВАТЬ!</h2>
+  </div>
+
+  <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afb28056186f050ada756bd35a0d291bda53d6fa5b51b199769a53b5571035cab&amp;source=constructor" height="577" frameborder="0"></iframe>
+</section>
+
   <footer>
     <div class="footer__wrapper">
       <nav class="menu">
@@ -217,5 +319,35 @@
       </span>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+    },
+    952: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+      // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+  </script>
+
 </body>
 </html>
